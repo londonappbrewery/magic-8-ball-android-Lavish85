@@ -5,9 +5,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#455A64">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make everyday decisions easier!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#1DE9B6"/>
+
+
+
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+            <ImageView
+                android:id="@+id/ball"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ball1"
+                android:layout_above="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="49dp" />
+
+
+
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="150dp"
+                android:paddingRight="150dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ask"
+                android:textColor="#ffffff"
+                android:background="#40C4FF"
+                android:id="@+id/button" />
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
 </RelativeLayout>
